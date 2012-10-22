@@ -1,0 +1,5 @@
+GET     /                                       Application.index
+GET     /schedule/day/{day}                     Application.scheduleOfDay
+GET     /favicon.ico                            404
+GET     /public/                                staticDir:public
+*       /{controller}/{action}                  {controller}.{action}

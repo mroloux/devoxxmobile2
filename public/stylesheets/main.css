@@ -1,0 +1,42 @@
+body {
+	background: #F9F9F9;
+	background-image: linear-gradient( #F9F9F9,#EEE );
+	background-image: -webkit-linear-gradient( #F9F9F9,#EEE );
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.title { 
+	text-align: center; 
+	background-image: linear-gradient(#3C3C3C, #111); 
+	background-image: -webkit-linear-gradient( #3C3C3C,#111 ); 
+	font-size: 16px; 
+	font-weight: bold;
+	color: white;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+}
+ul.listview {
+	list-style: none;
+	font-size: 16px;
+}
+ul.listview .listviewdivider {
+	border: 1px solid #456F9A;
+	background: #5E87B0;
+	background-image: linear-gradient( #6FACD5,#497BAE );
+	background-image: -webkit-linear-gradient( #6FACD5,#497BAE );
+	color: white;
+	font-weight: bold;
+	padding: 0.25em 0.7em;
+}
+ul.listview li a {
+	padding: 0.7em;
+	font-weight: bold;
+	color: black;
+	display: block;
+	background-image: -webkit-linear-gradient( #F6F6F6,#E0E0E0 );
+	background-image: linear-gradient( #F6F6F6,#E0E0E0 );
+	border-bottom: 1px solid #ccc;
+}

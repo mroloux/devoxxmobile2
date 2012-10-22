@@ -1,0 +1,6 @@
+CompilerOracle: exclude jregex/Pretokenizer.next
+Listening for transport dt_socket at address: 8000
+07:58:24,264 INFO  ~ Starting c:\Dev\workspace\devoxxmobile2
+07:58:24,685 WARN  ~ You're running Play! in DEV mode
+07:58:24,763 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+07:58:31,440 INFO  ~ Application 'devoxxmobile2' is now started !
