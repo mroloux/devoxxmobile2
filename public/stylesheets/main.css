@@ -33,10 +33,13 @@ ul.listview .listviewdivider {
 }
 ul.listview li a {
 	padding: 0.7em;
+	padding-right: 30px;
 	font-weight: bold;
 	color: black;
 	display: block;
-	background-image: -webkit-linear-gradient( #F6F6F6,#E0E0E0 );
-	background-image: linear-gradient( #F6F6F6,#E0E0E0 );
 	border-bottom: 1px solid #ccc;
+	background-image: url('/public/images/glyphicons/glyphicons_223_thin_right_arrow.png'), -webkit-linear-gradient( #F6F6F6,#E0E0E0 );
+	background-image: url('/public/images/glyphicons/glyphicons_223_thin_right_arrow.png'), linear-gradient( #F6F6F6,#E0E0E0 );
+	background-position: right;
+	background-repeat: no-repeat;
 }
