@@ -1,17 +1,12 @@
 body {
 	background: #F9F9F9;
-	background-image: linear-gradient( #F9F9F9,#EEE );
-	background-image: -webkit-linear-gradient( #F9F9F9,#EEE );
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
 }
 .title { 
 	text-align: center; 
-	background-image: linear-gradient(#3C3C3C, #111); 
-	background-image: -webkit-linear-gradient( #3C3C3C,#111 ); 
+	background: #111;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3C3C3C), color-stop(100%, #111));
+	background: -webkit-linear-gradient( #3C3C3C,#111 ); 
+	background: linear-gradient(#3C3C3C, #111); 
 	font-size: 16px; 
 	font-weight: bold;
 	color: white;
@@ -24,9 +19,10 @@ ul.listview {
 }
 ul.listview .listviewdivider {
 	border: 1px solid #456F9A;
-	background: #5E87B0;
-	background-image: linear-gradient( #6FACD5,#497BAE );
-	background-image: -webkit-linear-gradient( #6FACD5,#497BAE );
+	background: #497BAE;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6FACD5), color-stop(100%, #497BAE));
+	background: linear-gradient(#6FACD5, #497BAE);
+	background: -webkit-linear-gradient(#6FACD5, #497BAE);
 	color: white;
 	font-weight: bold;
 	padding: 0.25em 0.7em;
@@ -38,8 +34,14 @@ ul.listview li a {
 	color: black;
 	display: block;
 	border-bottom: 1px solid #ccc;
-	background-image: url('/public/images/glyphicons/glyphicons_223_thin_right_arrow.png'), -webkit-linear-gradient( #F6F6F6,#E0E0E0 );
-	background-image: url('/public/images/glyphicons/glyphicons_223_thin_right_arrow.png'), linear-gradient( #F6F6F6,#E0E0E0 );
-	background-position: right;
+	background: #E0E0E0;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F6F6F6), color-stop(100%, #E0E0E0));
+	background: url('/public/images/glyphicons/glyphicons_223_thin_right_arrow.png'), -webkit-linear-gradient(#F6F6F6, #E0E0E0);
+	background: url('/public/images/glyphicons/glyphicons_223_thin_right_arrow.png'), linear-gradient(#F6F6F6,#E0E0E0);
+	background-position: 99%;
 	background-repeat: no-repeat;
+}
+.content {
+	padding: 0.7em;
+	text-align: justify;
 }
