@@ -1,14 +1,16 @@
-#{extends 'main.html' /}
-
-<div class="row display">
-	<div class="title">Devoxx 2012 mobile</div>
-	<div>
-		<ul class="listview">
-		    <li><a href="@{ScheduleController.scheduleOfDay(1)}">Day 1 - Monday November 12</a></li>
-		    <li><a href="@{ScheduleController.scheduleOfDay(2)}">Day 2 - Tuesday November 13</a></li>
-		    <li><a href="@{ScheduleController.scheduleOfDay(3)}">Day 3 - Wednesday November 14</a></li>
-		    <li><a href="@{ScheduleController.scheduleOfDay(4)}">Day 4 - Thursday November 15</a></li>
-		    <li><a href="@{ScheduleController.scheduleOfDay(5)}">Day 5 - Friday November 16</a></li>
-		</ul>
-	</div>
-</div>
+<!doctype html>
+<html ng-app="devoxxmobile">
+    <head>
+        <title>Devoxx 2012 Mobile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/foundation.min.css'}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-resource.min.js"></script>
+		<script src="@{'/public/javascript/controller.js'}"></script>
+    </head>
+    <body>
+		<div ng-view></div>
+    </body>
+</html>
