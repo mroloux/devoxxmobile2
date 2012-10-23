@@ -1,0 +1,9 @@
+<div class="row display">
+	<div class="title">Day {{day}}</div>
+    <ul class="listview" ng-repeat="talkGroup in talkGroups.talkGroups.elements">
+        <li class="listviewdivider">{{talkGroup.key.fromTime}} - {{talkGroup.key.toTime}}</li>
+        <li ng-repeat="talk in talkGroup.value">
+            <a href="#/talk/{{talk.uri}}">{{talk.title}}</a>
+        </li>
+    </ul>
+</div>
