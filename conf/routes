@@ -1,5 +1,6 @@
 GET     /                                       Application.index
-GET     /schedule/day/{day}                     Application.scheduleOfDay
+GET     /schedule/day/{day}                     ScheduleController.scheduleOfDay
+GET     /talk			                     	TalkController.talk
 GET     /favicon.ico                            404
 GET     /public/                                staticDir:public
 *       /{controller}/{action}                  {controller}.{action}
