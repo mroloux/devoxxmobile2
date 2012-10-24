@@ -16,6 +16,7 @@ body {
 ul.listview {
 	list-style: none;
 	font-size: 16px;
+	margin-bottom: 0;
 }
 ul.listview .listviewdivider {
 	border: 1px solid #456F9A;

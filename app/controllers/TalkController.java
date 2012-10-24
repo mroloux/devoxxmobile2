@@ -9,8 +9,8 @@ import com.google.gson.Gson;
 
 public class TalkController extends Controller {
 
-	public static void talk(String uri) {
-		renderJSON(getTalk(uri));
+	public static void talk(String escapedUri) {
+		renderJSON(getTalk(escapedUri.replaceAll("---", "/")));
 	}
 
 	private static Map<String, String> getTalk(String uri) {

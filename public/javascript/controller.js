@@ -3,12 +3,12 @@ angular.module('devoxxmobile', ['ngResource']).
         $routeProvider.
             when('/', {templateUrl: '/public/views/days.html'}).
             when('/day/:day', {controller: DayController, templateUrl: '/public/views/day.html'}).
-            when('/talk/:talk', {controller: TalkController, templateUrl: '/public/views/talk.html'}).
+            when('/talk/:talkEscapedUri', {controller: TalkController, templateUrl: '/public/views/talk.html'}).
             otherwise({redirectTo:'/'});
 });
 
-function TalkController($scope) {
-	
+function TalkController($scope, $routeParams, $resource) {
+	$scope.talk = $resource('/talk?escapedUri=' + $routeParams.talkEscapedUri).get();
 }
 
 function DayController($scope, $routeParams, $resource) {
