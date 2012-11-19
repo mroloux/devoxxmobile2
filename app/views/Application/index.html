@@ -3,14 +3,21 @@
     <head>
         <title>Devoxx 2012 Mobile</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/foundation.min.css'}">
         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-resource.min.js"></script>
+		<script src="@{'/public/javascript/angular.js'}"></script>
+		<script src="@{'/public/javascript/angular-resource.min.js'}"></script>
 		<script src="@{'/public/javascript/controller.js'}"></script>
+		<script src="@{'/public/javascript/fastclick.js'}"></script>
+		<script src="@{'/public/javascript/jquery-1.7.2.min.js'}"></script>
     </head>
     <body>
+        <script type="text/javascript">
+            window.addEventListener('load', function() {
+                new FastClick(document.body);
+            }, false);
+        </script>
 		<div ng-view></div>
     </body>
 </html>
